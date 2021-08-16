@@ -19,8 +19,8 @@ stages:
 
     steps:
     - script: |
-        sudo apt-get install -y unzip
-      displayName: "Install unzipa"
+        sudo apt install -y npm
+      displayName: "Install NPM"
     - task: UseDotNet@2
       displayName: 'Use .NET SDK $(dotnetSdkVersion)'
       inputs:
