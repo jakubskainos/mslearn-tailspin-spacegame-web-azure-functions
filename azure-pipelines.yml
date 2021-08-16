@@ -19,7 +19,8 @@ stages:
 
     steps:
     - script: |
-        sudo apt install -y npm
+        sudo apt install -y nodejs npm
+        sudo npm install -g gulp-cli
       displayName: "Install NPM"
     - task: UseDotNet@2
       displayName: 'Use .NET SDK $(dotnetSdkVersion)'
